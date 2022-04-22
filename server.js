@@ -13,7 +13,8 @@ require('./config/database');
 require('./config/passport');
 
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+var clipsRouter = require('./routes/clips');
+var commentsRouter = require('./routes/comments');
 
 var app = express();
 

@@ -1,9 +1,9 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
+const commentsCtrl = require('../controllers/comments');
+const isLoggedIn = require('../config/auth');
 
-/* GET users listing. */
-router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
-});
+router.post('/clips/:id/comments', isLoggedIn, commentsCtrl.create);
+router.delete('/comments/:id', isLoggedIn, commentsCtrl.delete);
 
 module.exports = router;
