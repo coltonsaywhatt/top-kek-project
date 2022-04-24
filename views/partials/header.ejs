@@ -8,8 +8,7 @@
   <link rel='stylesheet' href='/stylesheets/style.css' />
   <link rel="shortcut icon" type="image/png" href="https://www.picng.com/upload/twitch/png_twitch_65616.png">
 </head>
-<body>
-  
+<body> 
   <nav>
     <h1>TOP KEK MOMENTS</h1>
     <img src="https://www.picng.com/upload/twitch/png_twitch_65616.png" class="logo"> 
@@ -21,11 +20,12 @@
           <li><a href="/index">home</a></li>
           <li><a href="/about">about</a></li>
           <li><a href="/clips">clips</a></li>
-  
+          <% if (user) { %>
             <li><a href="/clips/new">Submit Clip</a></li>
             <li><a href="/logout">Logout</a></li>
-  
+          <% } else { %>
           <li><a href="/auth/google" class="login">Login&nbsp;<img src="https://i.imgur.com/FHjYyi0.png"></a></li>
+          <% } %>
         </div>
     </div>
   </nav>
