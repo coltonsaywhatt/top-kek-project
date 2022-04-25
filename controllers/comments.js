@@ -10,11 +10,11 @@ function deleteComment(req, res, next) {
   Movie.findOne({'comments._id': req.params.id}).then(function(clip) {
     // Find the review subdoc using the id method on Mongoose arrays
     // https://mongoosejs.com/docs/subdocs.html
-    const review = movie.reviews.id(req.params.id);
+    const comment = clip.reviews.id(req.params.id);
     // Ensure that the review was created by the logged in user
-    if (!review.user.equals(req.user._id)) return res.redirect(`/clips/${clips._id}`);
+    if (!comment.user.equals(req.user._id)) return res.redirect(`/clips/${clips._id}`);
     // Remove the review using the remove method of the subdoc
-    review.remove();
+    comment.remove();
     // Save the updated movie
     clip.save().then(function() {
       // Redirect back to the movie's show view
@@ -34,9 +34,9 @@ function create(req, res) {
     req.body.userName = req.user.name;
     req.body.userAvatar = req.user.avatar;
     // Push the subdoc for the review
-    movie.reviews.push(req.body);
+    clip.reviews.push(req.body);
     // Always save the top-level document (not subdocs)
-    movie.save(function(err) {
+    clip.save(function(err) {
       res.redirect(`/clips/${clip._id}`);
     });
   });
