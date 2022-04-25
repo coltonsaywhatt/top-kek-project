@@ -1,19 +1,19 @@
 * {
   box-sizing: border-box;
   font-family: Helvetica;
-  color: #424748;
 }
 
 body {
-  background-image: url('https://www.creatopy.com/blog/wp-content/uploads/2018/10/Twitch-Social-Media-Image-Size.jpg');
+  background-image: url('https://i.ibb.co/c3q2h0y/Twitch-Social-Media-Image-Size.jpg');
   background-size: cover;
   margin: 0;
-  height: 100vh;
-  display: grid;
-  grid-template-rows: 50px 1fr;
-  grid-template-areas: 
-    "nav"
-    "main"
+  height: 100vh;  
+}
+
+.about{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .homeVideo {
@@ -112,7 +112,7 @@ body > nav {
   transform: translateY(0) rotate(45deg);
 }
 
-h1 {
+.title {
   position: absolute;
   color: white;
   left: 10px;
@@ -133,6 +133,68 @@ h1 {
     1px 4px 10px rgba(16,16,16,0.4);
 }
 
+h1, h2, h3, h4 {
+  display: flex;
+  justify-content: center;
+}
+
+.welcome {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 20px;
+  color: white;
+  font-family: "Arial Black", Gadget, sans-serif;
+  text-shadow: 1px 1px 1px #919191,
+    1px 2px 1px #919191,
+    1px 3px 1px #919191,
+    1px 4px 1px #919191,
+    1px 5px 1px #919191,
+    1px 6px 1px #919191,
+    1px 8px 6px rgba(16,16,16,0.4),
+    1px 5px 10px rgba(16,16,16,0.2),
+    1px 2px 5px rgba(16,16,16,0.2),
+    1px 4px 10px rgba(16,16,16,0.4);
+}
+
+.welcome h1 {
+  margin: 10px;
+  padding: 5px;
+}
+
+h3 {
+  color: rgb(203, 203, 203);
+  margin: auto;
+  padding: 5px;
+}
+
+.textTop {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  color: white;
+  text-shadow: 1px 1px 1px #919191,
+    1px 2px 1px #919191,
+    1px 3px 1px #919191,
+    1px 4px 1px #919191,
+    1px 5px 1px #919191,
+    1px 6px 1px #919191,
+    1px 8px 6px rgba(16,16,16,0.4),
+    1px 5px 10px rgba(16,16,16,0.2),
+    1px 2px 5px rgba(16,16,16,0.2),
+    1px 4px 10px rgba(16,16,16,0.4);
+}
+
+.topClips {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+iframe {
+  padding: 10px;
+}
+
 img {
   width: 14px;
   object-fit: contain;
@@ -142,5 +204,4 @@ img {
   position: absolute;
   width: 45px;
   left: 340px;
-
 }
