@@ -7,13 +7,54 @@ body {
   background-image: url('https://i.ibb.co/c3q2h0y/Twitch-Social-Media-Image-Size.jpg');
   background-size: cover;
   margin: 0;
-  height: 100vh;  
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-.about{
+.aboutContainer{
+  background-color: #6f5a90;
+	border-radius: 25px;
+	box-shadow: 10px 10px 15px rgba(0,0,0,0.35);
+	color: #B3B8CD;
+	padding: 30px 0 0;
+	width: 350px;
+	max-width: 100%;
+	text-align: center;
+	overflow: hidden;
   display: flex;
-  justify-content: center;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+  margin: auto;
+}
+
+.aboutContainer h1 {
+  text-transform: uppercase;
+  font-family: verdana;
+  font-size: 30px;
+  font-weight: 700;
+  color: #f5f5f5;
+  text-shadow: 1px 1px 1px #919191,
+    1px 2px 1px #919191,
+    1px 3px 1px #919191,
+    1px 4px 1px #919191,
+    1px 5px 1px #919191,
+    1px 6px 1px #919191,
+    1px 8px 6px rgba(16,16,16,0.4),
+    1px 5px 10px rgba(16,16,16,0.2),
+    1px 2px 5px rgba(16,16,16,0.2),
+    1px 4px 10px rgba(16,16,16,0.4);
+}
+
+
+.socialIcon img {
+  width: 40px;
+  filter: invert(100%);
   align-items: center;
+  justify-content: center;
+  flex-direction: row;  
+  margin: 10px;
 }
 
 .homeVideo {
