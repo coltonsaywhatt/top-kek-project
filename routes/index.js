@@ -7,7 +7,7 @@ router.get('/about', function(req, res, next) {
 });
 
 router.get('/', function(req, res, next) {
-  res.render('index');
+  res.render('index', {hostname: req.hostname});
 });
 
 // Google OAuth login route
