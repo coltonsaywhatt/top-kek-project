@@ -2,6 +2,10 @@ const express = require('express');
 const router = express.Router();
 const passport = require('passport');
 
+router.get('/about', function(req, res, next) {
+  res.render('about', { title: 'Express' });
+});
+
 router.get('/', function(req, res, next) {
   res.render('index');
 });
