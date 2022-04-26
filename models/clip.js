@@ -12,6 +12,11 @@ const commentSchema = new Schema({
 });
 
 const clipSchema = new Schema({
+  user: {
+    type: Schema.Types.ObjectId,
+    ref: 'User',
+    required: true
+  },
   Url: {
     type: String,
     required: true
