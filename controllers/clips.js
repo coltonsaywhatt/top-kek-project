@@ -24,13 +24,14 @@ function newClip(req, res) {
 function create(req, res) {
   var clipUrl = req.body.clipUrl;
   var match = clipUrl.match(/https:\/\/clips\.twitch\.tv\/(?<uid>[A-z0-9\-]+)/m);
-  console.log('clipUrl', clipUrl);
-  console.log('match', match);
   if (match.groups) {
     var embeddedUrl = `https://clips.twitch.tv/embed?clip=${match.groups.uid}&parent=${req.hostname}`;
+    req.body.user = req.user._id;
     var newClip = new Clip({Url:embeddedUrl});
     newClip.save(() => {
       res.redirect('/clips');
     });    
+  } else {
+    res.redirect('/clips');
   }
 }
