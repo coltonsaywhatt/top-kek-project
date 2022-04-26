@@ -1,9 +1,9 @@
 <%- include('../partials/header') %>
 
-<div class="homeVideo">
-  <iframe src="https://clips.twitch.tv/embed?clip=TransparentThankfulAlfalfaYee--byGuSDtkkL781Fs&parent=localhost" frameborder="0" allowfullscreen="true" scrolling="no" height="278" width="420"></iframe>
-
-  <iframe src="https://clips.twitch.tv/embed?clip=DelightfulUgliestOysterArgieB8-dFFiLvwuNpN6Dj6S&parent=localhost" frameborder="0" allowfullscreen="true" scrolling="no" height="278" width="420"></iframe>
+<div class="allClips">
+  <% for(let i = 0; i < clips.length; i++){%>
+    <iframe src="<%= clips[i].Url %>" frameborder="0" allowfullscreen="true" scrolling="no" height="278" width="420"></iframe>
+  <% } %>  
 </div>
   
 <%- include('../partials/footer') %>

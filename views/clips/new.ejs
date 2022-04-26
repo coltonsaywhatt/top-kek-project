@@ -2,6 +2,12 @@
 
 <form id="new-form" action="/clips" method="POST">
   <label>Submit Clip URL</label>
+  <br>
+  <label>
+    Paste Clip Url Here...
+    <input type="text" name="clipUrl" pattern="https:\/\/clips\.twitch\.tv\/([A-z0-9\-]+)">
+    <button type="submit">Submit</button>
+  </label>
 </form>
 
 <%- include('../partials/footer') %>
