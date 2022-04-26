@@ -47,6 +47,95 @@ body {
     1px 4px 10px rgba(16,16,16,0.4);
 }
 
+.allClipsContainer {
+  background-color: #6f5a90;
+	border-radius: 25px;
+	box-shadow: 10px 10px 15px rgba(0,0,0,0.35);
+	color: #B3B8CD;
+	padding: 30px 0 0;
+	max-width: 100%;
+	text-align: center;
+	overflow: auto;
+  display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row-reverse;
+  margin: auto;
+  padding: 10px;
+}
+
+.submitContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #8068a5;
+	border-radius: 25px;
+	box-shadow: 10px 10px 15px rgba(0,0,0,0.35);
+	color: #B3B8CD;
+	padding: 10px;
+	width: 420px;
+  height: 200px;
+	max-width: 100%;
+	text-align: center;
+	margin: auto;
+	overflow: hidden;
+  flex-direction: column;
+}
+
+.submitContainer h1 {
+  padding: 2px;
+  color: white;
+  left: 10px;
+  text-transform: uppercase;
+  font-family: verdana;
+  font-size: 30px;
+  font-weight: 700;
+  color: #f5f5f5;
+  text-shadow: 1px 1px 1px #919191,
+    1px 2px 1px #919191,
+    1px 3px 1px #919191,
+    1px 4px 1px #919191,
+    1px 5px 1px #919191,
+    1px 6px 1px #919191,
+    1px 8px 6px rgba(16,16,16,0.4),
+    1px 5px 10px rgba(16,16,16,0.2),
+    1px 2px 5px rgba(16,16,16,0.2),
+    1px 4px 10px rgba(16,16,16,0.4);
+}
+
+.submitContainer input {
+  width: 250px;
+  margin: 5px;
+}
+
+#submitBtn {
+  position: relative;
+  display: inline-block;
+  margin: 15px;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #725AC1;
+  background-color: white;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  border-radius: 30px;
+  border: 2px solid #725AC1;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 0 #725AC1;
+ }
+ 
+ #submitBtn:hover {
+  color: white;
+  box-shadow: inset 0 -100px 0 0 #725AC1;
+ }
+ 
+ #submitBtn:active {
+  transform: scale(0.9);
+ }
 
 .socialIcon img {
   width: 40px;

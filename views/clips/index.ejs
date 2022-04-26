@@ -1,6 +1,6 @@
 <%- include('../partials/header') %>
 
-<div class="allClips">
+<div class="allClipsContainer">
   <% for(let i = 0; i < clips.length; i++){%>
     <iframe src="<%= clips[i].Url %>" frameborder="0" allowfullscreen="true" scrolling="no" height="278" width="420"></iframe>
   <% } %>  

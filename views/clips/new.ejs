@@ -1,13 +1,15 @@
 <%- include('../partials/header') %>
 
-<form id="new-form" action="/clips" method="POST">
-  <label>Submit Clip URL</label>
-  <br>
-  <label>
-    Paste Clip Url Here...
-    <input type="text" name="clipUrl" pattern="https:\/\/clips\.twitch\.tv\/([A-z0-9\-]+)">
-    <button type="submit">Submit</button>
-  </label>
-</form>
+
+
+<div class="submitContainer">
+  <h1>Submit Twitch Clip</h1>
+  <form id="new-form" action="/clips" method="POST">
+    <label>Inset Clip URL Bellow</label>
+    <br>
+    <input type="text" name="clipUrl" placeholder="Paste Clip URL Here..." pattern="https:\/\/clips\.twitch\.tv\/([A-z0-9\-]+)">
+    <button id="submitBtn" type="submit">Submit</button>    
+  </form>
+</div>
 
 <%- include('../partials/footer') %>
