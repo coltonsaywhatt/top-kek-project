@@ -27,7 +27,9 @@ function create(req, res) {
   if (match.groups) {
     var embeddedUrl = `https://clips.twitch.tv/embed?clip=${match.groups.uid}&parent=${req.hostname}`;
     req.body.user = req.user._id;
-    var newClip = new Clip({Url:embeddedUrl});
+    req.body.Url = embeddedUrl;
+    var newClip = new Clip(req.body);
+    console.log(newClip);
     newClip.save(() => {
       res.redirect('/clips');
     });    
