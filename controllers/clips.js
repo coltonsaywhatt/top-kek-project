@@ -16,7 +16,7 @@ function index(req, res) {
 
 function show(req, res) {
   Clip.findOne({ _id: req.params.id },(err, clip) => {
-    res.render('clips/show', {clip});
+    res.render('clips/show', {clip, hostname: req.hostname});
   });
 }
 
