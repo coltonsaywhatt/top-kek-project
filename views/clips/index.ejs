@@ -3,7 +3,7 @@
 <div class="allClipsContainer">
   <% for(let i = 0; i < clips.length; i++){%>
     <div class="videoContainer"> 
-      <iframe src="<%= clips[i].Url %>" frameborder="0" allowfullscreen="true" scrolling="no" height="278" width="420"></iframe>
+      <iframe src="<%= clips[i].Url %>&parent=<%= hostname %>" frameborder="0" allowfullscreen="true" scrolling="no" height="278" width="420"></iframe>
       <button class="viewComments" role="button"><a href="/clips/<%= clips[i]._id %>">View Comments</a></button>
     </div>
   <% } %>    
