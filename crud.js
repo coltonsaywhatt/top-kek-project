@@ -1,11 +1,9 @@
 require('dotenv').config();
 require('./config/database')
-const Clip = require('./models/movie');
+const Clip = require('./models/clip');
 
-
-let m;
-let p;
+let c;
 
 Clip.findOne({}, function(err, clip) {
-  m = movie;
+  c = clip;
 });

@@ -32,7 +32,6 @@ function create(req, res) {
     req.body.user = req.user._id;
     req.body.Url = embeddedUrl;
     var newClip = new Clip(req.body);
-    console.log(newClip);
     newClip.save(() => {
       res.redirect('/clips');
     });    

@@ -17,7 +17,6 @@ var indexRouter = require('./routes/index');
 var clipsRouter = require('./routes/clips');
 var reviewsRouter = require('./routes/reviews');
 
-
 var app = express();
 
 // view engine setup
