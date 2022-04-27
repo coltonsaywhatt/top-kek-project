@@ -1,4 +1,4 @@
-const Movie = require('../models/clip');
+const Clip = require('../models/clip');
 
 module.exports = {
   create,
@@ -6,7 +6,7 @@ module.exports = {
 };
 
 function deleteReview(req, res, next) {
-  Movie.findOne({'reviews._id': req.params.id}).then(function(clip) {
+  Clip.findOne({'reviews._id': req.params.id}).then(function(clip) {
     const review = clip.reviews.id(req.params.id);
     if (!review.user.equals(req.user._id)) return res.redirect(`/clips/${clips._id}`);
     review.remove();
@@ -19,7 +19,7 @@ function deleteReview(req, res, next) {
 }
 
 function create(req, res) {
-  Movie.findById(req.params.id, function(err, clip) {
+  Clip.findById(req.params.id, function(err, clip) {
     req.body.user = req.user._id;
     req.body.userName = req.user.name;
     req.body.userAvatar = req.user.avatar;

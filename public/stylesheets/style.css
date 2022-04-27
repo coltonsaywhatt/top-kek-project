@@ -165,10 +165,12 @@ img {
 	padding: 10px 10px 0;
 	max-width: 100%;
 	text-align: center;
-	align-items: center;
 	justify-content: center;
   width: 1300px;
-  margin: auto;  
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;  
 }
 
 .viewComments {
@@ -183,10 +185,10 @@ img {
   font-family: Helvetica;
   font-size: 10px;
   font-weight: 700;
-  padding: 2px 10px;
-  text-align: left;
+  text-align: center;
   transform: translateZ(0) scale(1);
   transition: transform .2s;
+  width: 110px;
 }
 .viewComments a {
   text-decoration: none;
@@ -196,20 +198,12 @@ img {
   transform: scale(1.05);
 }
 
-.viewComments:not(:disabled):hover:active {
-  transform: scale(1.05) translateY(.125rem);
-}
-
-.viewComments:focus {
-  outline: 0 solid transparent;
-}
-
-.viewComments:focus:not(:focus-visible) {
-  outline: 0 solid transparent;
-}
-
-.viewComments:not(:disabled):active {
-  transform: translateY(.125rem);
+.videoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 420px;
+  height: 310px;
 }
 
 .submitContainer {

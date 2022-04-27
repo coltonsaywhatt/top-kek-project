@@ -2,6 +2,9 @@
 
 <section id="show-page">
 <h2>Reviews</h2>
+
+<iframe src="<%= clip.Url %>" frameborder="0" allowfullscreen="true" scrolling="no" height="278" width="420"></iframe>
+
 <% if (user) { %>
   <form id="add-review-form" method="POST" action="/clips/<%= clip._id %>/reviews">
     <label>Comment:</label>
