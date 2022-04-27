@@ -6,10 +6,120 @@
 body {
   background-image: url('https://i.ibb.co/c3q2h0y/Twitch-Social-Media-Image-Size.jpg');
   background-size: cover;
-  margin: 0;
   height: 100vh;
   display: flex;
   flex-direction: column;
+  margin: 0;
+}
+
+h1, h2, h3, h4 {
+  display: flex;
+  justify-content: center;
+}
+
+h3 {
+  color: rgb(203, 203, 203);
+  margin: auto;
+  padding: 5px;
+}
+
+body > nav {
+  background-color: #a385d3;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 20px 0 30px;
+}
+
+img {
+  width: 14px;
+  object-fit: contain;
+}
+
+.textLogo {
+  position: absolute;
+  color: white;
+  left: 10px;
+  text-transform: uppercase;
+  font-family: verdana;
+  font-size: 30px;
+  font-weight: 700;
+  color: #f5f5f5;
+  text-shadow: 1px 1px 1px #919191,
+    1px 2px 1px #919191,
+    1px 3px 1px #919191,
+    1px 4px 1px #919191,
+    1px 5px 1px #919191,
+    1px 6px 1px #919191,
+    1px 8px 6px rgba(16,16,16,0.4),
+    1px 5px 10px rgba(16,16,16,0.2),
+    1px 2px 5px rgba(16,16,16,0.2),
+    1px 4px 10px rgba(16,16,16,0.4);
+}
+
+.logo {
+  position: absolute;
+  width: 45px;
+  left: 340px;
+}
+
+.welcomeText {
+  margin: 10px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 35px;
+  color: white;
+  font-family: "Arial Black", Gadget, sans-serif;
+  text-shadow: 1px 1px 1px #919191,
+    1px 2px 1px #919191,
+    1px 3px 1px #919191,
+    1px 4px 1px #919191,
+    1px 5px 1px #919191,
+    1px 6px 1px #919191,
+    1px 8px 6px rgba(16,16,16,0.4),
+    1px 5px 10px rgba(16,16,16,0.2),
+    1px 2px 5px rgba(16,16,16,0.2),
+    1px 4px 10px rgba(16,16,16,0.4);
+}
+
+.textTopClips {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  color: white;
+  text-shadow: 1px 1px 1px #919191,
+    1px 2px 1px #919191,
+    1px 3px 1px #919191,
+    1px 4px 1px #919191,
+    1px 5px 1px #919191,
+    1px 6px 1px #919191,
+    1px 8px 6px rgba(16,16,16,0.4),
+    1px 5px 10px rgba(16,16,16,0.2),
+    1px 2px 5px rgba(16,16,16,0.2),
+    1px 4px 10px rgba(16,16,16,0.4);
+}
+
+.indexContainerTop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.indexContainerBottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #8068a5;
+	border-radius: 25px;
+	box-shadow: 10px 10px 15px rgba(0,0,0,0.35);
+	color: #B3B8CD;
+	padding: 10px;
+	width: 1700px;
+	max-width: 100%;
+	margin: 0 auto 35px;
 }
 
 .aboutContainer{
@@ -17,8 +127,8 @@ body {
 	border-radius: 25px;
 	box-shadow: 10px 10px 15px rgba(0,0,0,0.35);
 	color: #B3B8CD;
-	padding: 30px 0 0;
-	width: 350px;
+	padding: 20px;
+	width: 450px;
 	max-width: 100%;
 	text-align: center;
 	overflow: hidden;
@@ -59,6 +169,47 @@ body {
 	justify-content: center;
   width: 1300px;
   margin: auto;  
+}
+
+.viewComments {
+  background: #fff;
+  border-radius: .375rem;
+  border-style: solid;
+  border-width: .125rem;
+  box-sizing: border-box;
+  color: #212121;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Helvetica;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 10px;
+  text-align: left;
+  transform: translateZ(0) scale(1);
+  transition: transform .2s;
+}
+.viewComments a {
+  text-decoration: none;
+}
+
+.viewComments:not(:disabled):hover {
+  transform: scale(1.05);
+}
+
+.viewComments:not(:disabled):hover:active {
+  transform: scale(1.05) translateY(.125rem);
+}
+
+.viewComments:focus {
+  outline: 0 solid transparent;
+}
+
+.viewComments:focus:not(:focus-visible) {
+  outline: 0 solid transparent;
+}
+
+.viewComments:not(:disabled):active {
+  transform: translateY(.125rem);
 }
 
 .submitContainer {
@@ -105,6 +256,13 @@ body {
   margin: 5px;
 }
 
+.url-input {
+  width: 350px;
+  height: 30px;
+  border-radius: 20px;
+  border: 2px solid #ccc;
+}
+
 #submitBtn {
   position: relative;
   display: inline-block;
@@ -143,19 +301,7 @@ body {
   margin: 10px;
 }
 
-.homeVideo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-body > nav {
-  background-color: #a385d3;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 0 20px 0 30px;
-}
 
 .nav, .menu {
   display: flex;
@@ -239,119 +385,6 @@ body > nav {
   transform: translateY(0) rotate(45deg);
 }
 
-.title {
-  position: absolute;
-  color: white;
-  left: 10px;
-  text-transform: uppercase;
-  font-family: verdana;
-  font-size: 30px;
-  font-weight: 700;
-  color: #f5f5f5;
-  text-shadow: 1px 1px 1px #919191,
-    1px 2px 1px #919191,
-    1px 3px 1px #919191,
-    1px 4px 1px #919191,
-    1px 5px 1px #919191,
-    1px 6px 1px #919191,
-    1px 8px 6px rgba(16,16,16,0.4),
-    1px 5px 10px rgba(16,16,16,0.2),
-    1px 2px 5px rgba(16,16,16,0.2),
-    1px 4px 10px rgba(16,16,16,0.4);
-}
-
-h1, h2, h3, h4 {
-  display: flex;
-  justify-content: center;
-}
-
-.welcome {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  font-size: 20px;
-  color: white;
-  font-family: "Arial Black", Gadget, sans-serif;
-  text-shadow: 1px 1px 1px #919191,
-    1px 2px 1px #919191,
-    1px 3px 1px #919191,
-    1px 4px 1px #919191,
-    1px 5px 1px #919191,
-    1px 6px 1px #919191,
-    1px 8px 6px rgba(16,16,16,0.4),
-    1px 5px 10px rgba(16,16,16,0.2),
-    1px 2px 5px rgba(16,16,16,0.2),
-    1px 4px 10px rgba(16,16,16,0.4);
-}
-
-.welcome h1 {
-  margin: 10px;
-  padding: 5px;
-}
-
-h3 {
-  color: rgb(203, 203, 203);
-  margin: auto;
-  padding: 5px;
-}
-
-.textTop {
-  display: flex;
-  justify-content: center;
-  font-size: 30px;
-  color: white;
-  text-shadow: 1px 1px 1px #919191,
-    1px 2px 1px #919191,
-    1px 3px 1px #919191,
-    1px 4px 1px #919191,
-    1px 5px 1px #919191,
-    1px 6px 1px #919191,
-    1px 8px 6px rgba(16,16,16,0.4),
-    1px 5px 10px rgba(16,16,16,0.2),
-    1px 2px 5px rgba(16,16,16,0.2),
-    1px 4px 10px rgba(16,16,16,0.4);
-}
-
-.topContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.bottomContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #8068a5;
-	border-radius: 25px;
-	box-shadow: 10px 10px 15px rgba(0,0,0,0.35);
-	color: #B3B8CD;
-	padding: 10px;
-	width: 1700px;
-	max-width: 100%;
-	text-align: center;
-	margin: auto;
-	overflow: hidden;
-}
-
 iframe {
   padding: 10px;
-}
-
-img {
-  width: 14px;
-  object-fit: contain;
-}
-
-.logo {
-  position: absolute;
-  width: 45px;
-  left: 340px;
-}
-
-.url-input {
-  width: 350px;
-  height: 30px;
-  border-radius: 20px;
-  border: 2px solid #ccc;
 }
