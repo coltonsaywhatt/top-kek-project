@@ -9,6 +9,7 @@ module.exports = {
 
 function index(req, res) {
   Clip.find({}, (err, clips) => {
+    clips.reverse();
     res.render('clips/index', {clips});
   });
 }
