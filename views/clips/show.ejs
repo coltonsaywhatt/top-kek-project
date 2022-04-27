@@ -1,25 +1,30 @@
 <%- include('../partials/header') %>
 
 <section id="show-page">
-<h2>Reviews</h2>
 
-<iframe src="<%= clip.Url %>&parent=<%= hostname %>" frameborder="0" allowfullscreen="true" scrolling="no" height="278" width="420"></iframe>
-
-<% if (user) { %>
-  <form id="add-review-form" method="POST" action="/clips/<%= clip._id %>/reviews">
-    <label>Comment:</label>
-    <textarea name="content"></textarea>
-    <label>Rating:</label>
-    <select name="rating">
-      <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5</option>
-    </select>
-    <input type="submit" value="Add Review">
-  </form>
-<% } %>
+<div class="detailContainer">
+  <div class="detailClip">
+    <iframe src="<%= clip.Url %>&parent=<%= hostname %>" frameborder="0" allowfullscreen="true" scrolling="no" height="388" width="690"></iframe>
+  </div>
+  <div class="detailReview">
+    <h2>Reviews</h2>
+    <% if (user) { %>
+      <form id="add-review-form" method="POST" action="/clips/<%= clip._id %>/reviews">
+        <label>Comment:</label>
+        <textarea name="content"></textarea>
+        <label>Rating:</label>
+        <select name="rating">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+        <input type="submit" value="Add Review">
+      </form>
+    <% } %>
+  </div>
+</div>
 
 <% if (clip.reviews.length) { %>
   <table>
