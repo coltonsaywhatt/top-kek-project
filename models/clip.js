@@ -20,7 +20,8 @@ const clipSchema = new Schema({
   Url: {
     type: String,
     required: true
-  }
+  },
+  reviews: [reviewSchema],
 }, {
   timestamps: true
 });
