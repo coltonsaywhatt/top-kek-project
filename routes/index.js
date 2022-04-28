@@ -1,15 +1,18 @@
 const express = require('express');
 const router = express.Router();
 const passport = require('passport');
+const Clip = require('../models/clip');
 
 router.get('/about', function(req, res, next) {
   res.render('about', { title: 'Express' });
 });
 
 router.get('/', function(req, res, next) {
-  res.render('index', {hostname: req.hostname});
+  Clip.find({}, (err, clips) => {
+    clips.reverse();
+    res.render('index', {clips, hostname: req.hostname});
+  });
 });
-
 // Google OAuth login route
 router.get('/auth/google', passport.authenticate(
   'google',
