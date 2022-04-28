@@ -2,8 +2,20 @@ const Clip = require('../models/clip');
 
 module.exports = {
   create,
-  delete: deleteReview
+  delete: deleteReview,
+  update
 };
+
+function update(req, res) {
+  Clip.findOne({'reviews._id': req.params.id}, function(err, clip) {
+      const review = clip.reviews.id(req.params.id);
+      if (!review.user.equals(req.user._id)) return res.redirect(`/clips/${clip._id}`);
+      review.content = req.body.content;
+      clip.save(function(err) {
+          res.redirect(`/clips/${clip._id}`);
+      });
+  });
+}
 
 function deleteReview(req, res, next) {
   Clip.findOne({'reviews._id': req.params.id}).then(function(clip) {

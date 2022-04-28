@@ -173,24 +173,18 @@ img {
 }
 
 .viewComments {
-  background: #fff;
-  border-radius: .375rem;
-  border-style: solid;
-  border-width: .125rem;
-  box-sizing: border-box;
-  color: #212121;
+  background: white;
+  border-radius: 5px;
   cursor: pointer;
-  display: inline-block;
-  font-family: Helvetica;
   font-size: 10px;
   font-weight: 700;
-  text-align: center;
-  transform: translateZ(0) scale(1);
-  transition: transform .2s;
   width: 110px;
+  border: 1px solid black;
+  box-shadow: 0px 1px 2px 0px black;
 }
-.viewComments a {
+.viewComments > a {
   text-decoration: none;
+  color: black;
 }
 
 .viewComments:not(:disabled):hover {
@@ -416,7 +410,7 @@ form#add-review-form {
   box-shadow: 10px 10px 15px rgb(0 0 0 / 35%);
   color: #B3B8CD;
   width: 500px;
-  height: 80px;
+  height: 45px;
   margin: auto;
   display: flex;
 }
@@ -424,8 +418,98 @@ form#add-review-form {
 table {
   margin-inline: auto;
   margin-top: 50px;
-  background-color: #6f5a90;
+  background-color: #8068a5;
 	border-radius: 25px;
 	box-shadow: 10px 10px 15px rgba(0,0,0,0.35);
-  width: 30%;
+  width: 1000px;
+  color: black;
+}
+h5 {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  color: snow;
+}
+
+.updateReview {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;;
+}
+
+.updateReview input {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid;
+  width: 231px;
+  height: 20px;
+}
+
+input.commentInput {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid;
+  width: 231px;
+  height: 20px;
+}
+
+form#add-review-form {
+  color: white;
+}
+
+.updateBtn {
+  background: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 10px;
+  font-weight: 700;
+  width: 110px;
+  color: black;
+  box-shadow: 0px 1px 2px 0px black;
+  border: 1px solid black;
+}
+
+.updateBtn:not(:disabled):hover {
+  transform: scale(1.05);
+}
+
+.deleteBtn {
+  background: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 10px;
+  font-weight: 700;
+  width: 30px;
+  color: black;
+  box-shadow: 0px 1px 2px 0px black;
+  border: 1px solid black;
+  text-decoration: none;
+}
+
+.deleteBtn:not(:disabled):hover {
+  transform: scale(1.05);
+}
+
+.addBtn {
+  background: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 10px;
+  font-weight: 700;
+  width: 65px;
+  color: black;
+  box-shadow: 0px 1px 2px 0px black;
+  border: 1px solid black;
+}
+
+.addBtn:not(:disabled):hover {
+  transform: scale(1.05);
+}
+
+#del {
+  margin-right: 100px;
 }
