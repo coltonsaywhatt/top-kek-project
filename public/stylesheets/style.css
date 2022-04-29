@@ -454,7 +454,8 @@ input.commentInput {
 }
 
 form#add-review-form {
-  color: white;
+  color: black;
+  font-size: 14px;
 }
 
 .updateBtn {
@@ -545,4 +546,3 @@ table td {
   padding: 10px;
   text-align: center;
 }
-  
