@@ -76,4 +76,4 @@ Top KEK was made in Node/Express.
 
 ## :copyright: License
 
-\* See [license.txt](https://github.com/coltonsaywhatt/GA-Blackjack-Project/blob/main/LICENSE.text) for usage details.
+\* See [license.txt](https://github.com/coltonsaywhatt/top-kek-project/blob/main/LICENSE.text) for usage details.
