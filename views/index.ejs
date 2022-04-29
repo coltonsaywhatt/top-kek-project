@@ -1,20 +1,19 @@
 <%- include('./partials/header') %>
 
 <div>
-    <h1 class="welcomeText">Welcome to Top Kek Moments!</h1>     
+  <h1 class="welcomeText">Welcome to Top Kek Moments!</h1>     
 </div>
 <h3>The place for almost anything livestream related.</h3> 
-    <div class="indexContainerTop">
-        <iframe src="<%= clips[0].Url %>&parent=<%= hostname %>" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe>
-    </div>
-
+  <div class="indexContainerTop">
+    <iframe src="<%= clips[0].Url %>&parent=<%= hostname %>" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe>
+  </div>
 <h2 class="textTopClips">RECENT CLIPS</h2>
 <br>
 <div class="indexContainerBottom">
-    <iframe src="<%= clips[1].Url %>&parent=<%= hostname %>" frameborder="0" allowfullscreen="true" scrolling="no" height="278" width="420"></iframe>
-    <iframe src="<%= clips[2].Url %>&parent=<%= hostname %>" frameborder="0" allowfullscreen="true" scrolling="no" height="278" width="420"></iframe>
-    <iframe src="<%= clips[3].Url %>&parent=<%= hostname %>" frameborder="0" allowfullscreen="true" scrolling="no" height="278" width="420"></iframe>
-    <iframe src="<%= clips[4].Url %>&parent=<%= hostname %>" frameborder="0" allowfullscreen="true" scrolling="no" height="278" width="420"></iframe>
+  <iframe src="<%= clips[1].Url %>&parent=<%= hostname %>" frameborder="0" allowfullscreen="true" scrolling="no" height="278" width="420"></iframe>
+  <iframe src="<%= clips[2].Url %>&parent=<%= hostname %>" frameborder="0" allowfullscreen="true" scrolling="no" height="278" width="420"></iframe>
+  <iframe src="<%= clips[3].Url %>&parent=<%= hostname %>" frameborder="0" allowfullscreen="true" scrolling="no" height="278" width="420"></iframe>
+  <iframe src="<%= clips[4].Url %>&parent=<%= hostname %>" frameborder="0" allowfullscreen="true" scrolling="no" height="278" width="420"></iframe>
 </div>
 
 <%- include('./partials/footer') %>

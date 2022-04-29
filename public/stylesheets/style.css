@@ -288,8 +288,6 @@ img {
   margin: 10px;
 }
 
-
-
 .nav, .menu {
   display: flex;
   justify-content: center;
@@ -375,8 +373,6 @@ img {
 iframe {
   padding: 10px;
 }
-
-
 
 .detailClip {
   display: flex;
@@ -517,8 +513,13 @@ form#add-review-form {
 img.avatarImg {
   width: 50px;
 }
+
 p {
   margin: 0;
   transform: translateY(10px);
   font-size: 14px;
+}
+
+.aboutContent > p {
+  margin-top: -27px;
 }
