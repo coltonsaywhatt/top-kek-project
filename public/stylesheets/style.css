@@ -513,3 +513,7 @@ form#add-review-form {
 #del {
   margin-right: 100px;
 }
+
+img.avatarImg {
+  width: 50px;
+}
