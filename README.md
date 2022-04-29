@@ -32,7 +32,7 @@ Top KEK was made in Node/Express.
 [[Trello]](https://trello.com/b/oqsBu3dP/top-kek-project)
 
 <details>
-<summary> :gear: Functionality</summary>
+<summary> :camera: Screenshots</summary>
 
   | Description | Screenshot |
   |------------ | ------------|
