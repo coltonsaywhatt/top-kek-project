@@ -517,3 +517,8 @@ form#add-review-form {
 img.avatarImg {
   width: 50px;
 }
+p {
+  margin: 0;
+  transform: translateY(10px);
+  font-size: 14px;
+}

@@ -7,9 +7,7 @@
          <%= (clips[i].reviews.reduce((acc, review) => {
           return acc + review.rating;
          },0) / clips[i].reviews.length).toFixed(1) %>
-       </p>
-
-       <p><%= clips[i].reviews.length %> Comments</p>
+        / <%= clips[i].reviews.length %> Comments</p>
       <iframe src="<%= clips[i].Url %>&parent=<%= hostname %>" frameborder="0" allowfullscreen="true" scrolling="no" height="278" width="420"></iframe>
       <button class="viewComments" role="button"><a href="/clips/<%= clips[i]._id %>">View Comments</a></button>
     </div>
