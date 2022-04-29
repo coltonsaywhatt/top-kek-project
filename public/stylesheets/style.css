@@ -523,3 +523,26 @@ p {
 .aboutContent > p {
   margin-top: -27px;
 }
+
+table thead th {
+    padding: 5px;
+}
+
+table {
+  font-size: 15px;
+}
+
+.review-user img {
+  border-radius: 50%;
+  height: 40px;
+}
+
+.review-user {
+  display: flex;
+}
+
+table td {
+  padding: 10px;
+  text-align: center;
+}
+  
